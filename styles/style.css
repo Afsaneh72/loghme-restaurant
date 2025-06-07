@@ -1,6 +1,6 @@
 @font-face {
-    font-family: vazi;
-    src: url(../fonts/Vazirmatn-VariableFont_wght.ttf);
+  font-family: vazi;
+  src: url(../fonts/Vazirmatn-VariableFont_wght.ttf);
 }
 
 :root {
@@ -12,83 +12,78 @@
   --Nav-hover: rgba(255, 255, 255, 0.1);
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    font-family: 'vazir', 'Arial Narrow', Arial, sans-serif;
+body {
+  font-family: "vazir", "Arial Narrow", Arial, sans-serif;
 }
 
-.header{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100vh;
-    align-items: flex-start;
-    justify-content: space-between;
-    background: url(../images/pizza-pepperoni.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: url(../images/pizza-pepperoni.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.navbar{
-    display: flex;
+.navbar {
+  display: flex;
   justify-content: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
 }
-.nav-item{
-    text-decoration: none;
-    color: var(--White);
-    background-color: var(--Nav-button);
-    margin: 0.5rem;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 2px;
-    transition: 0.2s ease-in-out;
+.nav-item {
+  text-decoration: none;
+  color: var(--White);
+  background-color: var(--Nav-button);
+  margin: 0.5rem;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  transition: 0.2s ease-in-out;
 }
-.nav-item:hover{
-    background-color: var(--Nav-hover);
-    transform: translateY(0.2rem);
+.nav-item:hover {
+  background-color: var(--Nav-hover);
+  transform: translateY(0.2rem);
 }
 
- .logo{
-    width: 15rem;
-    border-radius: 50%;
-
-  }
-  .button{
-    background-color: var(--Yellow);
-    color: var(--Purple);
-    border-radius: 2rem;
-    padding: 1rem 2rem;
-    font-size: 3rem;
-    font-weight: 600;
-    text-decoration: none;
-    margin-left: 1rem;
-
-  }
-@media only screen and (max-width: 600px)
-  {
-    .header
-    {
-        background: url(../images/mobile.jpg);
-         background-size: cover;
-          flex-direction: column;
+.logo {
+  width: 15rem;
+  border-radius: 50%;
+}
+.button {
+  background-color: var(--Yellow);
+  color: var(--Purple);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    background: url(../images/mobile.jpg);
+    background-size: cover;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem; /* فاصله بین آیتم‌ها */
     text-align: center;
-    }
-    .navbar{
-        flex-direction: column;
-    }
-    .nav-item{
-        width: max-content;
-    }
-    .logo{
-        hidd
-    }
-  }  
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    
 
- 
+  }
+  .nav-item {
+    width: max-content;
+  }
+
+}
