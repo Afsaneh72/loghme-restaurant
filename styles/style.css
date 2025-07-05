@@ -115,7 +115,14 @@ h2 {
     justify-content: center;
     gap: 1rem;
     text-align: center;
+  }  .navbar {
+    flex-direction: column;
+    align-items: flex-start; /* یا center */
+    gap: 1rem; /* فاصله بین آیتم‌ها */
+    background-color: var(--Nav-button); /* اختیاری */
+    padding: 1rem; /* اختیاری */
   }
+
  .burger{
   display: flex;
  }
@@ -127,17 +134,18 @@ h2 {
   display: flex;
   animation: burger 1s;
  }
- /* @keyframes burger {
+ @keyframes burger {
   from{
 opacity: 0;
   }
   to{
 opacity: 1;
-  } */
+  }
  }
  .logo{
   width: 20rem;
  }
+}
 
 /* menu */
 .menu {
