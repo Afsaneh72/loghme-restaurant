@@ -7,4 +7,19 @@ popup.classList.add("popup");
 function closePopup() {
     popup.classList.remove("popup");
 }
-popup.addEventListener("click", closePopup)
+popup.addEventListener("click", closePopup);
+
+// burger menu
+const burger= document.querySelector("#burger");
+function menu (){
+const navItems= document.querySelectorAll(".nav-item");
+for (const navItem of navItems){
+    if (navItem.classList.contains("nav-item-show")){
+        navItem.classList.remove("nav-item-show");
+    } else{
+        navItem.classList.add("nav-item-show");
+    }
+}
+}
+
+burger.addEventListener("click", menu);

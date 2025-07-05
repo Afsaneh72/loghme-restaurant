@@ -57,6 +57,7 @@ h2 {
   justify-content: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 .nav-item {
   color: var(--White);
@@ -70,6 +71,15 @@ h2 {
 .nav-item:hover {
   background-color: var(--Nav-hover);
   transform: translateY(0.2rem);
+}
+.burger{
+  background-color: var(--White);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin: 1.5rem;
+  padding: .25rem;
+  display: none;
 }
 
 .logo {
@@ -106,14 +116,29 @@ h2 {
     gap: 1rem;
     text-align: center;
   }
-  .navbar {
-    flex-direction: column;
-    align-items: center;
+ .burger{
+  display: flex;
+ }
+
+ .nav-item{
+  display: none;
+ }
+  .nav-item-show{
+  display: flex;
+  animation: burger 1s;
+ }
+ /* @keyframes burger {
+  from{
+opacity: 0;
   }
-  .nav-item {
-    width: max-content;
-  }
-}
+  to{
+opacity: 1;
+  } */
+ }
+ .logo{
+  width: 20rem;
+ }
+
 /* menu */
 .menu {
   background-color: var(--Yellow);
