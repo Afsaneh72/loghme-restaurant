@@ -131,24 +131,33 @@
           <a href="tel:09122222222">09122222222</a>
         </div>
       </section>
-      <form action="" class="form">
+      <form id="form" class="form">
         <h2>رزرو میز آنلاین</h2>
         <input
           type="text"
           name="name"
           id="name"
           placeholder="نام و نام خانوادگی"
+          title="نام و نام خانوادگی"
+          autocomplete="off"
           class="input"
         />
-        <input type="tel" name="phone" id="phone" class="input" placeholder="شماره تماس" />
-        <select name="" id="" class="input">
+        <input type="tel"
+         name="phone" 
+         id="phone" 
+         class="input" 
+         placeholder="شماره تماس" 
+         title="شماره تماس"
+          autocomplete="off"
+         />
+        <select title="تعداد نفرات" name="number" id="number" class="input">
           <option value="">تعداد نفرات</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="">بیش از 3 نفز</option>
         </select>
-        <select name="" id="" class="input">
+        <select title="ساعت" name="time" id="time" class="input">
           <option value="">زمان</option>
           <option value="19">19:00</option>
           <option value="20">20:00</option>

@@ -67,4 +67,41 @@ const result = commentList.map(function(comment){
 const commentItemsDiv = document.querySelector("#comment-items");
 commentItemsDiv. innerHTML= result;
 
+// form
+const form = document.querySelector("#form");
 
+function validation(event) {
+    if (event.target.name === "name") {
+        const farsi = /^[\u0600-\u06FF\s]*$/;  // فقط حروف فارسی و فاصله
+        if (!farsi.test(event.target.value)) {
+            event.target.value = "";
+            alert("لطفا فارسی وارد کنید");
+        }
+    } else if (event.target.name === "phone") {
+        const englishNumbers = /^[0-9]*$/;  // فقط اعداد انگلیسی
+        if (!englishNumbers.test(event.target.value)) {
+            event.target.value = "";
+            alert("لطفا فقط عدد انگلیسی وارد کنید");
+        }
+    }
+}
+
+form.addEventListener("keyup", validation);
+
+function submit (event){
+    event.preventDefault();
+    const inputs= document.querySelectorAll(".input");
+    let error="";
+    for (const input of inputs){
+        if(!input.value){
+            error= error+`\n${input.title} نباید خالی باشد`
+        }
+        }  
+        if (error){
+            alert(error);
+        }else{
+            alert("ارسال درخواست");
+        }
+
+}
+form.addEventListener("submit", submit)
