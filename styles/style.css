@@ -234,20 +234,7 @@ opacity: 1;
   transition: 0.2s ease-in-out;
   margin: 3rem 0;
 }
-.comment-item-animation{
 
-  animation: comments 0.5s;
-}
-@keyframes comments {
- from{
-  opacity: 0.5;
-  transform: translateX(-50px);
- } 
- to{
-  opacity: 1;
-  transform: translateX(0);
- }
-}
 
 .comment-item:hover {
   transform: scale(1.02);

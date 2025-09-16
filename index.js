@@ -25,5 +25,46 @@ for (const navItem of navItems){
 burger.addEventListener("click", menu);
 
 // comments
-const comments= document.querySelectorAll(".comment-item");
-const observer = new IntersectionObserver(function() {});
+const commentList =[
+    {
+        name:"علی",
+        content:" یکی از بهترین رستوران هایی که میشناسم واقعا فوق العاده ست",
+        Image:"3.jpg"
+    },
+      {
+        name:"سحر",
+        content:" یکی از بهترین رستوران هایی که میشناسم واقعا فوق العاده ست",
+        Image:"images (1).jpg"
+    },
+       {
+        name:"سمیرا",
+        content:" یکی از بهترین رستوران هایی که میشناسم واقعا فوق العاده ست",
+        Image:"images.jpg"
+    },
+       {
+        name:"احسان",
+        content:" یکی از بهترین رستوران هایی که میشناسم واقعا فوق العاده ست",
+        Image:"4.jpg"
+    },
+];
+const result = commentList.map(function(comment){
+    return `<figure class="comment-item">
+            <img
+              src="./images/${comment.Image}"
+              class="comment-item-image"
+              alt=${comment.name}
+            />
+            <figcaption class="comment-item-text">
+              <h3>${comment.name}</h3>
+    <p>
+              ${comment.content}
+              </p>
+            </figcaption>
+          </figure>`
+})
+.join("")
+
+const commentItemsDiv = document.querySelector("#comment-items");
+commentItemsDiv. innerHTML= result;
+
+
