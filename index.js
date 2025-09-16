@@ -23,3 +23,7 @@ for (const navItem of navItems){
 }
 
 burger.addEventListener("click", menu);
+
+// comments
+const comments= document.querySelectorAll(".comment-item");
+const observer = new IntersectionObserver(function() {});
